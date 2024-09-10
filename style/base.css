@@ -19,6 +19,8 @@
   --orange: #ED8E00;
   --lightOrange: #F18128;
   --blk: #000;
+  --gray: #C8C8C8;
+
 }
 
 body {
@@ -33,4 +35,30 @@ body {
   height: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  background: var(--lightOrange);
+  height: 45px;
+  width: 166px;
+  font-family: var(--R);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--blk);
+  border-radius: 4px;
+}
+
+
+@media (hover: hover) {
+  .btn:hover {
+    background: var(--blk);
+    color: var(--w);
+  }
+}
+@media (hover: none) {
+  .btn:active {
+    background: var(--blk);
+    color: var(--w);
+  }
 }
