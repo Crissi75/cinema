@@ -1,0 +1,104 @@
+.film__title {
+    padding: 10px 0;
+    font-family: var(--C);
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--w);
+    position: relative;
+    transition: 0.3s;
+    margin-top: 60px;
+}
+
+.film__title::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: var(--orange);
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.film__title:hover {
+    color: var(--orange);
+}
+
+.film__title:hover::after {
+    width: 98px;
+}
+
+.film__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 255px) ;
+    grid-template-rows: 367px;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 55px;
+    margin-bottom: 78px;
+}
+
+.card {
+    max-width: 255px;
+    width: 100%;
+    height: 367px;
+    border-radius: 6px;
+    background: url(../img/Black_Panther_film_poster\ 1.png);
+    z-index: 100;
+    position: relative;
+    padding: 18px 15px;
+}
+
+.card__bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+    border-radius: 6px;
+    z-index: -1;
+}
+
+.card__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon {
+    font-size: 41px;
+    padding-top: 36px;
+    padding-bottom: 12px;
+}
+
+.time {
+    background: #070F1933;
+    padding: 7px 28px;
+    border: solid 1px var(--w);
+    border-radius: 9px;
+    font-family: var(--M);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--w);
+}
+
+.card__title {
+    font-family: var(--M);
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.card__text {
+    font-family: var(--R);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+    padding-top: 12px;
+}
